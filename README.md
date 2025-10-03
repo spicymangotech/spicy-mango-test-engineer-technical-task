@@ -106,7 +106,7 @@ If you prefer not to use GitHub:
 
 1. Complete your work locally
 2. Create a zip file excluding `node_modules/`
-3. Email to: [hiring-email@company.com]
+3. Email to: [james.lock@spciymango.co.uk]
 
 **Include in your submission:**
 
