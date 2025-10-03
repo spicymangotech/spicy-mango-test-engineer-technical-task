@@ -88,6 +88,32 @@ If you have any questions during the assessment, please document your assumption
 
 **Bonus Challenges:** See `BONUS.md` for optional advanced challenges (not required for assessment).
 
+## Submission Instructions
+
+### Option 1: Fork & Pull Request (Recommended)
+
+1. **Fork** this repository to your GitHub account
+2. Clone your fork locally: `git clone [your-fork-url]`
+3. Create a feature branch: `git checkout -b assessment-solution`
+4. Complete your work and commit changes
+5. Push to your fork: `git push origin assessment-solution`
+6. **Create a pull request** back to the original repository
+7. Email us the pull request link
+
+### Option 2: Zip File Submission
+
+If you prefer not to use GitHub:
+
+1. Complete your work locally
+2. Create a zip file excluding `node_modules/`
+3. Email to: [hiring-email@company.com]
+
+**Include in your submission:**
+
+-   All test files and reports
+-   README with setup instructions
+-   Any additional documentation
+
 ---
 
 ---
