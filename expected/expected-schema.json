@@ -1,0 +1,7 @@
+{
+    "id": "string",
+    "homeTeam": "string",
+    "awayTeam": "string",
+    "score": "string|null",
+    "status": ["scheduled", "in_progress", "finished"]
+}

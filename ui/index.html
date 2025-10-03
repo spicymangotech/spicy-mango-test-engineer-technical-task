@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spicy Mango – ETL Matches Dashboard</title>
+        <style>
+            body {
+                font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+                margin: 24px;
+            }
+            h1 {
+                margin-bottom: 8px;
+            }
+            .controls {
+                margin: 16px 0;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th,
+            td {
+                border: 1px solid #ccc;
+                padding: 8px;
+            }
+            th {
+                text-align: left;
+            }
+            .tag {
+                padding: 2px 6px;
+                border-radius: 4px;
+                background: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ETL Matches Dashboard</h1>
+        <p>Simple UI showing data from the mock API.</p>
+        <div class="controls">
+            <button id="btnExtract">Load Extract Data</button>
+            <button id="btnTransformed">Load Transformed Data</button>
+            <button id="btnRunTransform">Run Transform</button>
+            <button id="btnReset">RESET</button>
+        </div>
+
+        <p><strong>Dataset:</strong> <span id="datasetName" class="tag">none</span></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Home</th>
+                    <th>Away</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+        </table>
+
+        <script>
+            const rows = document.getElementById('rows');
+            const datasetName = document.getElementById('datasetName');
+
+            function render(records) {
+                rows.innerHTML = '';
+                records.forEach((r) => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+          <td>${r.id ?? r.matchId}</td>
+          <td>${r.homeTeam ?? r.home}</td>
+          <td>${r.awayTeam ?? r.away}</td>
+          <td>${r.score ?? r.result ?? '-'}</td>
+          <td>${r.status ?? r.state ?? '-'}</td>
+        `;
+                    rows.appendChild(tr);
+                });
+            }
+
+            document.getElementById('btnExtract').onclick = async () => {
+                datasetName.textContent = 'extract/provider-matches.json';
+                const res = await fetch('/api/extract/matches');
+                render(await res.json());
+            };
+            document.getElementById('btnTransformed').onclick = async () => {
+                datasetName.textContent = 'load/matches.json';
+                const res = await fetch('/api/load/matches');
+                render(await res.json());
+            };
+            document.getElementById('btnRunTransform').onclick = async () => {
+                datasetName.textContent = 'transform';
+                const res = await fetch('/api/transform/run', { method: 'POST' });
+                const json = await res.json();
+                render(json.data);
+            };
+            document.getElementById('btnReset').onclick = async () => {
+                datasetName.textContent = 'reset';
+                const res = await fetch('/api/reset', { method: 'DELETE' });
+                const json = await res.json();
+                render([]);
+            };
+        </script>
+    </body>
+</html>

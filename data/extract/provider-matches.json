@@ -1,0 +1,107 @@
+[
+    {
+        "matchId": "001",
+        "home": "Glasgow Titans",
+        "away": "Edinburgh Eagles",
+        "result": "3-2",
+        "state": "finished"
+    },
+    {
+        "matchId": "002",
+        "home": "London Lions",
+        "away": "Manchester Bears",
+        "result": "1-1",
+        "state": "finished"
+    },
+    {
+        "matchId": "003",
+        "home": "Cardiff Dragons",
+        "away": "Belfast Sharks",
+        "result": null,
+        "state": "scheduled"
+    },
+    {
+        "matchId": "004",
+        "home": "Glasgow Titans",
+        "away": "Cardiff Dragons",
+        "result": null,
+        "state": "scheduled"
+    },
+    {
+        "matchId": "004",
+        "home": "Glasgow Titans",
+        "away": "Belfast Sharks",
+        "result": null,
+        "state": "in_progress"
+    },
+    {
+        "matchId": "005",
+        "home": "",
+        "away": "Liverpool Wolves",
+        "result": "0-3",
+        "state": "finished"
+    },
+    {
+        "matchId": "006",
+        "home": "Bristol City",
+        "away": null,
+        "result": "2-0",
+        "state": "finished"
+    },
+    {
+        "matchId": "",
+        "home": "Newcastle United",
+        "away": "Southampton FC",
+        "result": "4-4",
+        "state": "finished"
+    },
+    {
+        "matchId": "007",
+        "home": "Team With Very Long Name That Might Break UI",
+        "away": "Short",
+        "result": "99-0",
+        "state": "finished"
+    },
+    {
+        "matchId": "008",
+        "home": "Special Chars FC!@#$%",
+        "away": "Émoji United ⚽",
+        "result": "1-1",
+        "state": "FINISHED"
+    },
+    {
+        "matchId": "009",
+        "home": "Home Team",
+        "away": "Away Team",
+        "result": "",
+        "state": "finished "
+    },
+    {
+        "matchId": "010",
+        "home": "Test FC",
+        "away": "Mock United",
+        "result": "invalid-score",
+        "state": "finished"
+    },
+    {
+        "matchId": null,
+        "home": "Null ID Team",
+        "away": "Test Team",
+        "result": "2-1",
+        "state": "finished"
+    },
+    {
+        "matchId": "011",
+        "home": "Same Team",
+        "away": "Same Team",
+        "result": "1-0",
+        "state": "finished"
+    },
+    {
+        "matchId": "012",
+        "home": "Future Match",
+        "away": "Another Team",
+        "result": "3-1",
+        "state": "scheduled"
+    }
+]

@@ -1,0 +1,16 @@
+{
+    "name": "spicy-mango-test-engineer-technical-task",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Full application for Spicy Mango Test Engineer ETL validation task",
+    "main": "api/server.js",
+    "scripts": {
+        "start": "node api/server.js",
+        "test": "echo 'No tests specified' && exit 1"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.19.2",
+        "cors": "^2.8.5"
+    }
+}

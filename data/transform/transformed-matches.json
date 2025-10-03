@@ -1,0 +1,30 @@
+[
+    {
+        "id": "match-001",
+        "homeTeam": "Glasgow Titans",
+        "awayTeam": "Edinburgh Eagles",
+        "score": "3-2",
+        "status": "finished"
+    },
+    {
+        "id": "match-002",
+        "homeTeam": "London Lions",
+        "awayTeam": null,
+        "score": "1-1",
+        "status": "done"
+    },
+    {
+        "id": "match-003",
+        "homeTeam": "Cardiff Dragons",
+        "awayTeam": "Belfast Sharks",
+        "score": 2,
+        "status": "scheduled"
+    },
+    {
+        "id": "match-002",
+        "homeTeam": "Foo",
+        "awayTeam": "Bar",
+        "score": "0-0",
+        "status": "in_progress"
+    }
+]
