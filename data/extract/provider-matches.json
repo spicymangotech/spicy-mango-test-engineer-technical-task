@@ -31,7 +31,7 @@
         "matchId": "004",
         "home": "Glasgow Titans",
         "away": "Belfast Sharks",
-        "result": null,
+        "result": [],
         "state": "in_progress"
     },
     {
@@ -80,7 +80,7 @@
         "matchId": "010",
         "home": "Test FC",
         "away": "Mock United",
-        "result": "invalid-score",
+        "result": 2,
         "state": "finished"
     },
     {

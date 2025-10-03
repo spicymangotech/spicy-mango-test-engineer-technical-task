@@ -1,1 +1,107 @@
-[]
+[
+  {
+    "id": "match-001",
+    "homeTeam": "Glasgow Titans",
+    "awayTeam": "Edinburgh Eagles",
+    "score": "3-2",
+    "status": "done"
+  },
+  {
+    "id": "match-002",
+    "homeTeam": "London Lions",
+    "awayTeam": "Manchester Bears",
+    "score": "1-1",
+    "status": "done"
+  },
+  {
+    "id": "match-003",
+    "homeTeam": "Cardiff Dragons",
+    "awayTeam": "Belfast Sharks",
+    "score": null,
+    "status": "in_progress"
+  },
+  {
+    "id": "match-004",
+    "homeTeam": "Glasgow Titans",
+    "awayTeam": "Cardiff Dragons",
+    "score": null,
+    "status": "in_progress"
+  },
+  {
+    "id": "match-004",
+    "homeTeam": "Glasgow Titans",
+    "awayTeam": "Belfast Sharks",
+    "score": [],
+    "status": "in_progress"
+  },
+  {
+    "id": "match-005",
+    "homeTeam": null,
+    "awayTeam": "Liverpool Wolves",
+    "score": "0-3",
+    "status": "done"
+  },
+  {
+    "id": "match-006",
+    "homeTeam": "Bristol City",
+    "awayTeam": null,
+    "score": "2-0",
+    "status": "done"
+  },
+  {
+    "id": "match-",
+    "homeTeam": "Newcastle United",
+    "awayTeam": "Southampton FC",
+    "score": "4-4",
+    "status": "done"
+  },
+  {
+    "id": "match-007",
+    "homeTeam": "Team With Very Long Name That Might Break UI",
+    "awayTeam": "Short",
+    "score": "99-0",
+    "status": "done"
+  },
+  {
+    "id": "match-008",
+    "homeTeam": "Special Chars FC!@#$%",
+    "awayTeam": "Émoji United ⚽",
+    "score": "1-1",
+    "status": "in_progress"
+  },
+  {
+    "id": "match-009",
+    "homeTeam": "Home Team",
+    "awayTeam": "Away Team",
+    "score": "",
+    "status": "in_progress"
+  },
+  {
+    "id": "match-010",
+    "homeTeam": "Test FC",
+    "awayTeam": "Mock United",
+    "score": "2",
+    "status": "done"
+  },
+  {
+    "id": "match-null",
+    "homeTeam": "Null ID Team",
+    "awayTeam": "Test Team",
+    "score": "2-1",
+    "status": "done"
+  },
+  {
+    "id": "match-011",
+    "homeTeam": "Same Team",
+    "awayTeam": "Same Team",
+    "score": "1-0",
+    "status": "done"
+  },
+  {
+    "id": "match-012",
+    "homeTeam": "Future Match",
+    "awayTeam": "Another Team",
+    "score": "3-1",
+    "status": "in_progress"
+  }
+]
