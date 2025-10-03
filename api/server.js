@@ -20,6 +20,8 @@ const reset = () => {
     fs.writeFileSync(loadPath, '[]');
 };
 
+reset();
+
 // Serve UI statically
 app.use('/', express.static(path.join(__dirname, '../ui')));
 
