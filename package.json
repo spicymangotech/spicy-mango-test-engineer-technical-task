@@ -6,7 +6,8 @@
     "main": "api/server.js",
     "scripts": {
         "start": "node api/server.js",
-        "test": "jest --verbose"
+        "test": "jest --verbose",
+        "test:cov": "jest --coverage"
     },
     "dependencies": {
         "body-parser": "^1.20.2",

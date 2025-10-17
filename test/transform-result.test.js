@@ -32,3 +32,7 @@ test('should handle wrong type', () => {
 test('should return null for future match', () => {
     expect(transformed[6].score).toBeNull();
 });
+
+test('should parse number result', () => {
+    expect(transformed[7].score).toMatch(scoreRegex);
+});

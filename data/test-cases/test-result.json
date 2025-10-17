@@ -29,6 +29,13 @@
             "status": "scheduled"
         },
         {
+            "id": "match-003",
+            "homeTeam": "Cardiff Dragons",
+            "awayTeam": "Belfast Sharks",
+            "result": 2,
+            "status": "scheduled"
+        },
+        {
             "matchId": "004",
             "home": "Glasgow Titans",
             "away": "Cardiff Dragons",
