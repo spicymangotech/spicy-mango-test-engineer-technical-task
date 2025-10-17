@@ -1,0 +1,53 @@
+{
+    "cases": [
+        {
+            "id": "match-001",
+            "homeTeam": "Glasgow Titans",
+            "awayTeam": "Edinburgh Eagles",
+            "score": "3-2",
+            "status": "finished"
+        },
+        {
+            "matchId": "005",
+            "home": "",
+            "away": "Liverpool Wolves",
+            "result": "0-3",
+            "state": "finished"
+        },
+        {
+            "matchId": "006",
+            "home": "Bristol City",
+            "away": null,
+            "result": "2-0",
+            "state": "finished"
+        },
+        {
+            "id": "match-003",
+            "homeTeam": "Cardiff Dragons",
+            "awayTeam": "Belfast Sharks",
+            "score": 2,
+            "status": "scheduled"
+        },
+        {
+            "matchId": "004",
+            "home": "Glasgow Titans",
+            "away": "Cardiff Dragons",
+            "result": null,
+            "state": "scheduled"
+        },
+        {
+            "matchId": "004",
+            "home": "Glasgow Titans",
+            "away": "Belfast Sharks",
+            "result": [],
+            "state": "in_progress"
+        },
+        {
+            "matchId": "012",
+            "home": "Future Match",
+            "away": "Another Team",
+            "result": "3-1",
+            "state": "scheduled"
+        }
+    ]
+}

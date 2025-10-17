@@ -1,0 +1,74 @@
+{
+    "cases": [
+        {
+            "data": {
+                "matchId": "001",
+                "home": "Glasgow Titans",
+                "away": "Edinburgh Eagles",
+                "score": "3-2",
+                "status": "finished"
+            },
+            "test": "should read finished status correctly"
+        },
+        {
+            "data": {
+                "matchId": "003",
+                "home": "Cardiff Dragons",
+                "away": "Belfast Sharks",
+                "result": null,
+                "state": "scheduled"
+            },
+            "test": "should read scheduled status correctly"
+        },
+        {
+            "data": {
+                "matchId": "004",
+                "home": "Glasgow Titans",
+                "away": "Belfast Sharks",
+                "result": [],
+                "state": "in_progress"
+            },
+            "test": "should read in_progress status correctly"
+        },
+        {
+            "data": {
+                "matchId": "008",
+                "home": "Special Chars FC!@#$%",
+                "away": "Émoji United ⚽",
+                "result": "1-1",
+                "state": "FINISHED"
+            },
+            "test": "should process case insensitive status"
+        },
+        {
+            "data": {
+                "matchId": "002",
+                "home": "London Lions",
+                "away": null,
+                "score": "1-1",
+                "status": "done"
+            },
+            "test": "should process non-standard status"
+        },
+        {
+            "data": {
+                "matchId": "002",
+                "home": "Foo",
+                "away": "Bar",
+                "score": "0-0",
+                "status": "in progress"
+            },
+            "test": "should process non-standard status with space"
+        },
+        {
+            "data": {
+                "matchId": "002",
+                "home": "Foo",
+                "away": "Bar",
+                "score": "0-0",
+                "status": 1
+            },
+            "test": "should handle wrong type status"
+        }
+    ]
+}

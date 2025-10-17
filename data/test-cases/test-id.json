@@ -1,0 +1,72 @@
+[
+    {
+        "data": {
+            "matchId": "001",
+            "home": "Glasgow Titans",
+            "away": "Edinburgh Eagles",
+            "result": "3-2",
+            "state": "finished"
+        },
+        "test": "should parse valid ID"
+    },
+    {
+        "data": {
+            "matchId": "012",
+            "home": "Future Match",
+            "away": "Another Team",
+            "result": "3-1",
+            "state": "scheduled"
+        },
+        "test": "should parse valid ID"
+    },
+    {
+        "data": {
+            "matchId": "212",
+            "home": "Trinity Match",
+            "away": "A Team",
+            "result": "3-1",
+            "state": "scheduled"
+        },
+        "test": "should parse valid ID"
+    },
+    {
+        "data": {
+            "matchId": "012",
+            "home": "Trinity Match",
+            "away": "A Team",
+            "result": "3-1",
+            "state": "scheduled"
+        },
+        "test": "should parse valid ID"
+    },
+    {
+        "data": {
+            "matchId": "",
+            "home": "Newcastle United",
+            "away": "Southampton FC",
+            "result": "4-4",
+            "state": "finished"
+        },
+        "test": "should process empty string"
+    },
+    {
+        "data": {
+            "matchId": null,
+            "home": "Null ID Team",
+            "away": "Test Team",
+            "result": "2-1",
+            "state": "finished"
+        },
+        "test": "should process null ID"
+    },
+    {
+        "data": {
+            "matchId": 1024,
+            "home": "BIG ID Team",
+            "away": "Test Team",
+            "result": "2-1",
+            "state": "finished"
+        },
+        "test": "should process big ID"
+    }
+]
