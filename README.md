@@ -115,6 +115,21 @@ If you prefer not to use GitHub:
 -   Any additional documentation
 
 ---
+## Running tests (based on Jest)
+
+Setting up node modules:
+
+```bash
+pnpm install (as I use pnpm here for faster package management, npm or yarn may also work)
+```
+
+Running tests:
+
+```bash
+pnpm run test
+```
+
+The issues found are listed in Report.md.
 
 ---
 

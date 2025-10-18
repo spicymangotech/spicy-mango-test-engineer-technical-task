@@ -1,0 +1,87 @@
+{
+    "validTeamName": [
+        "Glasgow Titans",
+        "Edinburgh Eagles",
+        "London Lions",
+        "Manchester Bears",
+        "Cardiff Dragons",
+        "Belfast Sharks",
+        "Cardiff Dragons",
+        "Bristol City",
+        "Newcastle United",
+        "Southampton FC",
+        "Special Chars FC",
+        "Emoji United",
+        "Home Team",
+        "Away Team",
+        "Test FC",
+        "Mock United",
+        "Null ID Team",
+        "Test Team",
+        "Same Team",
+        "Future Match",
+        "Another Team"
+    ],
+    "cases": [
+        {
+            "data": {
+                "matchId": "001",
+                "home": "Glasgow Titans",
+                "away": "Edinburgh Eagles",
+                "result": "3-2",
+                "state": "finished"
+            },
+            "test": "should process normal team names"
+        },
+        {
+            "data": {
+                "matchId": "005",
+                "home": "",
+                "away": "Liverpool Wolves",
+                "result": "0-3",
+                "state": "finished"
+            },
+            "test": "should react to empty string"
+        },
+        {
+            "data": {
+                "matchId": "006",
+                "home": "Bristol City",
+                "away": null,
+                "result": "2-0",
+                "state": "finished"
+            },
+            "test": "should react to null value"
+        },
+        {
+            "data": {
+                "matchId": "007",
+                "home": "Team With Very Long Name That Might Break UI",
+                "away": "Short",
+                "result": "99-0",
+                "state": "finished"
+            },
+            "test": "should handle very long or short team names"
+        },
+        {
+            "data": {
+                "matchId": "008",
+                "home": "Special Chars FC!@#$%",
+                "away": "Émoji United ⚽",
+                "result": "1-1",
+                "state": "FINISHED"
+            },
+            "test": "should handle special characters and emojis"
+        },
+        {
+            "data": {
+                "matchId": "011",
+                "home": "Same Team",
+                "away": "Same Team",
+                "result": "1-0",
+                "state": "finished"
+            },
+            "test": "should handle same team playing against itself"
+        }
+    ]
+}
